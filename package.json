@@ -1,6 +1,6 @@
 {
     "name": "jshint-checkstyle-reporter",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "JSHint checkstyle file reporter",
     "main": "index.js",
     "keywords": [

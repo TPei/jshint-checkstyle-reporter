@@ -13,12 +13,14 @@ export JSHINT_CHECKSTYLE_FILE="jshint.xml"
 jshint --reporter node_modules/jshint-checkstyle-reporter *.js subfolder/*.js sub/subfolder.js
 ```
 
-As of 08/20/2014 JSHint's --reporter checkstyle reporter always logs everything as level error resulting in <error ... /> for every xml entry. I made this tool for that purpose, it translates the fiven issue code to the actual severity level resulting in proper logging.
+As of 08/20/2014 JSHint's --reporter checkstyle reporter always logs everything as level error resulting in <error severity="error" ... /> for every xml entry. I made this tool for that purpose, it translates the given issue code to the actual severity level resulting in proper logging.
 
 ### Like so:
 ```XML
 <error line="227" column="44" severity="error" message="Too many errors. (16% scanned)." source="jshint.E043" />
-<warning line="42" column="14" severity="warning" message="Missing semicolon." source="jshint.W033" />
+<error line="42" column="14" severity="warning" message="Missing semicolon." source="jshint.W033" />
 ```
+
+This way Jenkins actually registers the different levels (error and warning)
 
 The message codes are up to date as of 08/20/2014
