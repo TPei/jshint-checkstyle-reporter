@@ -101,7 +101,5 @@ module.exports =
 
         var filename = process.env.JSHINT_CHECKSTYLE_FILE || "checkstyle.xml";
         fs.writeFileSync(filename, out.join('\n'));
-
-        console.log("Output written to " + filename);
     }
 };
