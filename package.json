@@ -1,0 +1,37 @@
+{
+    "name": "jshint-checkstyle-reporter",
+    "version": "0.0.1",
+    "description": "JSHint checkstyle file reporter",
+    "main": "index.js",
+    "keywords": [
+        "jshint",
+        "checkstyle",
+        "jenkins"
+    ],
+
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/TPei/jshint-checkstyle-reporter.git"
+    },
+    "bugs": {
+        "url": "https://github.com/TPei/jshint-checkstyle-reporter/issues"
+    },
+    "homepage": "https://github.com/TPei/jshint-checkstyle-reporter",
+
+    "author": {
+        "name": "Thomas Peikert",
+        "email": "dragon5689@gmx.net"
+    },
+
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://raw.githubusercontent.com/TPei/node-mysql-relation-manager/master/LICENSE"
+        }
+    ],
+
+    "dependencies": {
+        "underscore": "1.6.x"
+    }
+
+}
