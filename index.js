@@ -2,6 +2,7 @@
 // http://github.com/relaxnow
 // Author: Thomas Peikert
 // http://github.com/TPei
+var fs = require('fs');
 
 module.exports =
 {
@@ -98,6 +99,9 @@ module.exports =
 
         out.push("</checkstyle>");
 
-        console.log(out.join("\n"));
+        var filename = process.env.JSHINT_CHECKSTYLE_FILE || "checkstyle.xml";
+        fs.writeFileSync(filename, out.join('\n'));
+
+        console.log("Output written to " + filename);
     }
 };
